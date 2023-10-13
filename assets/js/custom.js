@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	"use strict";
-
+    
         /*==================================
 * Author        : "ThemeSine"
 * Template Name : Khanas HTML Template
@@ -10,14 +10,14 @@ $(document).ready(function(){
 
 
 /*=========== TABLE OF CONTENTS ===========
-1. Scroll To Top
+1. Scroll To Top 
 2. Smooth Scroll spy
 3. Progress-bar
 4. owl carousel
 5. welcome animation support
 ======================================*/
 
-    // 1. Scroll To Top
+    // 1. Scroll To Top 
 		$(window).on('scroll',function () {
 			if ($(this).scrollTop() > 600) {
 				$('.return-to-top').fadeIn();
@@ -31,43 +31,32 @@ $(document).ready(function(){
 			}, 1500);
 			return false;
 		});
-
-
-
+	
+	
+	
 	// 2. Smooth Scroll spy
-
+		
 		$('.header-area').sticky({
            topSpacing:0
         });
-
+		
 		//=============
-
-		$('.portfolio a').bind("click", function(event) {
-			event.preventDefault();
-			var anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top - 92
-			}, 1200,'easeInOutExpo');
-		});
-
-
-
 
 		$('li.smooth-menu a').bind("click", function(event) {
 			event.preventDefault();
 			var anchor = $(this);
 			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top - 92
+				scrollTop: $(anchor.attr('href')).offset().top - 0
 			}, 1200,'easeInOutExpo');
 		});
-
+		
 		$('body').scrollspy({
 			target:'.navbar-collapse',
 			offset:0
 		});
 
 	// 3. Progress-bar
-
+	
 		var dataToggleTooTip = $('[data-toggle="tooltip"]');
 		var progressBar = $(".progress-bar");
 		if (progressBar.length) {
@@ -81,11 +70,11 @@ $(document).ready(function(){
 				});
 			});
 		}
-
+	
 	// 4. owl carousel
-
+	
 		// i. client (carousel)
-
+		
 			$('#client').owlCarousel({
 				items:7,
 				loop:true,
@@ -112,15 +101,10 @@ $(document).ready(function(){
 						}
 					}
 				});
-
-
+				
+				
 				$('.play').on('click',function(){
 					owl.trigger('play.owl.autoplay',[1000])
-					event.preventDefault();
-					var anchor = $(this);
-					$('html, body').stop().animate({
-						scrollTop: $(anchor.attr('href')).offset().top - 92
-					}, 1200,'easeInOutExpo');
 				})
 				$('.stop').on('click',function(){
 					owl.trigger('stop.owl.autoplay')
@@ -139,4 +123,5 @@ $(document).ready(function(){
             $(".header-text a").addClass("animated fadeInDown").css({'opacity':'0'});
         });
 
-});
+});	
+	

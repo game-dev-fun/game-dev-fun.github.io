@@ -349,6 +349,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 {
   background:  #f6f7f7;
   padding-top:  50px;
+  padding-bottom: 50px;
 }
 
 .rpg
@@ -1000,6 +1001,22 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
   height: 150px;
 }
 
+.list li
+{
+  list-style: disc !important;
+  margin-left: 20px !important;
+}
+
+.list ul li
+{
+  list-style: circle !important;
+  margin-left: 40px !important;
+}
+
+.bold
+{
+  font-weight: 500;
+}
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption {
   animation-name: zoom;
@@ -1028,6 +1045,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
   text-decoration: none;
   cursor: pointer;
 }
+
+.point
+{
+  margin-left: 20px;
+}
+
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
